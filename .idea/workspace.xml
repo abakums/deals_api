@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6bd61b35-103d-4c6b-b28d-1f932bd3852b" name="Default Changelist" comment="addition readme">
-      <change afterPath="$PROJECT_DIR$/files/csv_files/.gitkeep" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -56,21 +54,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Readme.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor>
-                <caret selection-end-line="14" />
-              </first_editor>
+              <first_editor />
               <second_editor />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/files/csv_files/.gitkeep">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -234,7 +225,7 @@
       <workItem from="1626362239744" duration="2193000" />
       <workItem from="1626431519780" duration="6101000" />
       <workItem from="1626541244496" duration="581000" />
-      <workItem from="1626707011472" duration="289000" />
+      <workItem from="1626707011472" duration="732000" />
     </task>
     <task id="LOCAL-00001" summary="addition readme">
       <created>1626438843866</created>
@@ -247,7 +238,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68856000" />
+    <option name="totallyTimeSpent" value="69299000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -424,18 +415,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/files/csv_files/.gitkeep">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/Readme.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor>
-            <caret selection-end-line="14" />
-          </first_editor>
+          <first_editor />
           <second_editor />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/files/csv_files/.gitkeep">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>
