@@ -80,10 +80,10 @@ WSGI_APPLICATION = 'deals_api_project.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'postgres',
+        'NAME': 'deals',
         'USER': 'postgres',
         'PASSWORD': '123456',
-        'HOST': 'db',
+        'HOST': 'localhost',
         'PORT': 5432
     }
 }

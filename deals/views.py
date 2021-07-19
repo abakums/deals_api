@@ -25,11 +25,19 @@ class UploadFileView(generics.ListCreateAPIView):
     filter_backends = (DjangoFilterBackend, SearchFilter)
     filter_fields = ('id', )
 
-    def perform_create(self, serializer):
-        serializer.validated_data['file'], serializer.validated_data['date_from'], serializer.validated_data['date_to']\
-            = csv_handler(serializer.validated_data['file'], UploadFile.objects.all().count())
-        if serializer.is_valid():
-            return serializer.save()
+    def create(self, request, *args, **kwargs):
+        serializer = self.get_serializer(data=request.data)
+        serializer.is_valid(raise_exception=True)
+        file = serializer.validated_data['file']
+        if file.name[-4:] != '.csv':
+            return Response({'Error': 'Wrong file type: expected .csv type of file'})
+
+        serializer.validated_data['file'], serializer.validated_data['date_from'], \
+        serializer.validated_data['date_to'] = csv_handler(serializer.validated_data['file'],
+                                                           UploadFile.objects.all().count())
+        self.perform_create(serializer)
+        headers = self.get_success_headers(serializer.data)
+        return Response(serializer.data, headers=headers)
 
 
 class CustomersFromFileView(generics.ListAPIView):
